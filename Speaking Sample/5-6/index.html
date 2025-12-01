@@ -462,75 +462,76 @@ body {
     <script>
         const questionsData = [
             {
-                id: 1,
-                question: "Do you have a large family or a small family? Tell me something about them.",
-                answer: "I have a small family. Um, there are five people in my family. There is my parents and my two brothers. We, you know, we get along with each other. We like to have family dinners together.",
-                vocabHighlighted: ["small family", "get along with", "family dinners"],
-                vietnamese: "Tôi có một gia đình nhỏ. Um, có năm người trong gia đình của tôi. Có bố mẹ của tôi và hai anh trai của tôi. Chúng tôi, bạn biết đó, chúng tôi hòa thuận với nhau. Chúng tôi thích có bữa cơm gia đình cùng nhau."
-            },
-            {
-                id: 2,
-                question: "Who are you closest to in your family? Why?",
-                answer: "I am closest to my mother. She is a family member, um, I mean, she is very important to me. I can share secrets with her because I trust her very much. We spend time together and she is very kind.",
-                vocabHighlighted: ["family member", "share secrets", "spend time together"],
-                vietnamese: "Tôi gần nhất với mẹ của tôi. Bà ấy là một thành viên gia đình, um, ý tôi là, bà ấy rất quan trọng đối với tôi. Tôi có thể chia sẻ bí mật với bà ấy vì tôi tin tưởng bà ấy rất nhiều. Chúng tôi dành thời gian cùng nhau và bà ấy rất tử tế."
-            },
-            {
-                id: 3,
-                question: "Do you spend much time with your family?",
-                answer: "Yes, I spend time with my family on weekends. Um, everyone is busy with work so, you know, we try to have family gatherings maybe, like, once a month. And we have fun with movies and games.",
-                vocabHighlighted: ["spend time with", "family gatherings", "have fun with"],
-                vietnamese: "Vâng, tôi dành thời gian với gia đình vào cuối tuần. Um, mọi người bận rộn với công việc nên, bạn biết đó, chúng tôi cố gắng có cuộc tụ họp gia đình, có thể, như, một lần một tháng. Và chúng tôi vui chơi với phim và trò chơi."
-            },
-            {
-                id: 4,
-                question: "Do you prefer spending time with your family or friends?",
-                answer: "Um, I think I like, you know, spending time with family more. My best friend is very nice and we have fun together, but family is more important, I think. Family support is, um, very important to me.",
-                vocabHighlighted: ["spending time with", "best friend", "have fun", "family support"],
-                vietnamese: "Um, tôi nghĩ tôi thích, bạn biết đó, dành thời gian với gia đình nhiều hơn. Bạn thân nhất của tôi rất tốt bụng và chúng tôi vui chơi cùng nhau, nhưng gia đình quan trọng hơn, tôi nghĩ. Sự hỗ trợ của gia đình là, um, rất quan trọng đối với tôi."
-            },
-            {
-                id: 5,
-                question: "Do you have many close friends?",
-                answer: "No, I don't have many close friends. I have, um, like, three close friends. We, you know, we get along with each other very well. I prefer to have a few close friends than many friends.",
-                vocabHighlighted: ["close friends", "get along with"],
-                vietnamese: "Không, tôi không có nhiều bạn thân. Tôi có, um, như, ba bạn thân. Chúng tôi, bạn biết đó, chúng tôi hòa thuận rất tốt. Tôi thích có một vài bạn thân hơn là nhiều bạn."
-            },
-            {
-                id: 6,
-                question: "Who is your best friend? How did you meet?",
-                answer: "My best friend is, um, my classmate from university. We met in the first year and we became close friends. We have fun with, like, going out and, you know, talking about many things. We share secrets and we trust each other.",
-                vocabHighlighted: ["best friend", "close friends", "have fun", "share secrets"],
-                vietnamese: "Bạn thân nhất của tôi là, um, bạn cùng lớp từ đại học. Chúng tôi gặp nhau trong năm thứ nhất và chúng tôi trở thành những người bạn thân. Chúng tôi vui chơi với, như, đi chơi và, bạn biết đó, nói chuyện về nhiều thứ. Chúng tôi chia sẻ bí mật và chúng tôi tin tưởng lẫn nhau."
-            },
-            {
-                id: 7,
-                question: "What do you usually do when you spend time with your friends?",
-                answer: "Um, we have fun with many things. Sometimes we go to eat food or have coffee. We like to watch movies together and, you know, we play games. We just like to spend time together because we get along with each other.",
-                vocabHighlighted: ["have fun with", "spend time together", "get along with"],
-                vietnamese: "Um, chúng tôi vui chơi với nhiều thứ. Đôi khi chúng tôi đi ăn hoặc uống cà phê. Chúng tôi thích xem phim cùng nhau và, bạn biết đó, chúng tôi chơi trò chơi. Chúng tôi chỉ thích dành thời gian cùng nhau vì chúng tôi hòa thuận."
-            },
-            {
-                id: 8,
-                question: "Do you share secrets with your close friends?",
-                answer: "Yes, um, I share secrets with my close friends. I think that is very important for a good friendship. My best friends, I can talk to them about, you know, personal problems. So yes, I share secrets with them.",
-                vocabHighlighted: ["close friends", "share secrets", "best friends"],
-                vietnamese: "Vâng, um, tôi chia sẻ bí mật với những bạn thân của tôi. Tôi nghĩ rằng điều đó rất quan trọng cho một tình bạn tốt. Những người bạn thân nhất của tôi, tôi có thể nói chuyện với họ về, bạn biết đó, các vấn đề cá nhân. Vì vậy, vâng, tôi chia sẻ bí mật với họ."
-            },
-            {
-                id: 9,
-                question: "Are you still friends with people from your childhood?",
-                answer: "Um, yes, I have, like, two or three childhood friends. We, um, we don't see each other very often but we stay in contact. We message sometimes and when we meet, it is very nice. I think these are very close relationship because we know each other for a long time.",
-                vocabHighlighted: ["childhood friends", "stay in contact", "close relationship"],
-                vietnamese: "Um, vâng, tôi có, như, hai hoặc ba người bạn thơ ấu. Chúng tôi, um, chúng tôi không gặp nhau thường xuyên lắm nhưng chúng tôi giữ liên lạc. Chúng tôi gửi tin nhắn đôi khi và khi chúng tôi gặp, nó rất tuyệt vời. Tôi nghĩ rằng đây là những mối quan hệ rất gần gũi vì chúng tôi biết nhau lâu rồi."
-            },
-            {
-                id: 10,
-                question: "How important is family support to you?",
-                answer: "Um, family support is very important for me. My family, they help me in many ways. When I have problems, they are there. I think family support is, you know, it is really important. My family members always help me so I am very grateful.",
-                vocabHighlighted: ["family support", "family members"],
-                vietnamese: "Um, sự hỗ trợ của gia đình rất quan trọng đối với tôi. Gia đình của tôi, họ giúp tôi theo nhiều cách. Khi tôi có vấn đề, họ ở đó. Tôi nghĩ rằng sự hỗ trợ của gia đình là, bạn biết đó, nó thực sự quan trọng. Những thành viên gia đình của tôi luôn giúp tôi nên tôi rất biết ơn."
-            }
+            id: 1,
+            question: "Do you have a large family or a small family? Tell me something about them.",
+            answer: "I have a small family. There are five people in my family: my parents, my two brothers, and me. We get along well with each other, and we like having family dinners together.",
+            vocabHighlighted: ["small family", "get along with", "family dinners"],
+            vietnamese: "Tôi có một gia đình nhỏ. Có năm người trong gia đình tôi: bố mẹ tôi, hai anh trai của tôi và tôi. Chúng tôi hòa thuận với nhau và chúng tôi thích có những bữa cơm gia đình cùng nhau."
+        },
+        {
+            id: 2,
+            question: "Who are you closest to in your family? Why?",
+            answer: "I am closest to my mother. She is very important to me. I can share my secrets with her because I trust her a lot. We spend time together, and she is very kind.",
+            vocabHighlighted: ["family member", "share secrets", "spend time together"],
+            vietnamese: "Tôi gần gũi nhất với mẹ. Bà ấy rất quan trọng đối với tôi. Tôi có thể chia sẻ bí mật với bà ấy vì tôi rất tin tưởng bà. Chúng tôi dành thời gian bên nhau và bà ấy rất tử tế."
+        },
+        {
+            id: 3,
+            question: "Do you spend much time with your family?",
+            answer: "Yes, I spend time with my family on weekends. Everyone is busy with work, so we try to have family gatherings about once a month. We usually watch movies and play games together.",
+            vocabHighlighted: ["spend time with", "family gatherings", "have fun with"],
+            vietnamese: "Vâng, tôi dành thời gian với gia đình vào cuối tuần. Mọi người đều bận rộn với công việc, vì vậy chúng tôi cố gắng có những buổi tụ họp gia đình khoảng một lần mỗi tháng. Chúng tôi thường xem phim và chơi trò chơi cùng nhau."
+        },
+        {
+            id: 4,
+            question: "Do you prefer spending time with your family or friends?",
+            answer: "I think I prefer spending time with my family. My best friend is really nice and we have a lot of fun together, but family is more important to me. Family support means a lot to me.",
+            vocabHighlighted: ["spending time with", "best friend", "have fun", "family support"],
+            vietnamese: "Tôi nghĩ tôi thích dành thời gian với gia đình hơn. Bạn thân của tôi rất dễ thương và chúng tôi rất vui khi ở bên nhau, nhưng gia đình quan trọng hơn đối với tôi. Sự hỗ trợ của gia đình có ý nghĩa rất lớn với tôi."
+        },
+        {
+            id: 5,
+            question: "Do you have many close friends?",
+            answer: "No, I don't have many close friends. I have about three close friends. We get along very well, and I prefer having a few close friends rather than many friends.",
+            vocabHighlighted: ["close friends", "get along with"],
+            vietnamese: "Không, tôi không có nhiều bạn thân. Tôi có khoảng ba người bạn thân. Chúng tôi hòa thuận với nhau rất tốt, và tôi thích có một vài bạn thân hơn là có quá nhiều bạn."
+        },
+        {
+            id: 6,
+            question: "Who is your best friend? How did you meet?",
+            answer: "My best friend is one of my classmates from university. We met in our first year and became close friends. We have fun going out together and talking about many things. We also share secrets and trust each other.",
+            vocabHighlighted: ["best friend", "close friends", "have fun", "share secrets"],
+            vietnamese: "Bạn thân nhất của tôi là một người bạn cùng lớp thời đại học. Chúng tôi gặp nhau vào năm nhất và trở thành bạn thân. Chúng tôi vui vẻ khi đi chơi cùng nhau và nói chuyện về nhiều thứ. Chúng tôi cũng chia sẻ bí mật và tin tưởng lẫn nhau."
+        },
+        {
+            id: 7,
+            question: "What do you usually do when you spend time with your friends?",
+            answer: "We have fun doing many things. Sometimes we go out to eat or have coffee. We also like watching movies and playing games together. We enjoy spending time together because we get along really well.",
+            vocabHighlighted: ["have fun with", "spend time together", "get along with"],
+            vietnamese: "Chúng tôi vui chơi với nhiều hoạt động. Đôi khi chúng tôi đi ăn hoặc uống cà phê. Chúng tôi cũng thích xem phim và chơi trò chơi cùng nhau. Chúng tôi thích dành thời gian cho nhau vì chúng tôi rất hòa hợp."
+        },
+        {
+            id: 8,
+            question: "Do you share secrets with your close friends?",
+            answer: "Yes, I share secrets with my close friends. I think it is important for building a strong friendship. I can talk to my best friends about personal problems, so yes, I share secrets with them.",
+            vocabHighlighted: ["close friends", "share secrets", "best friends"],
+            vietnamese: "Vâng, tôi chia sẻ bí mật với những người bạn thân của mình. Tôi nghĩ điều đó rất quan trọng để xây dựng một tình bạn bền chặt. Tôi có thể nói chuyện với bạn thân của mình về các vấn đề cá nhân, vì vậy tôi có chia sẻ bí mật với họ."
+        },
+        {
+            id: 9,
+            question: "Are you still friends with people from your childhood?",
+            answer: "Yes, I still have two or three childhood friends. We don’t see each other very often, but we stay in contact. We text sometimes, and when we meet, it’s always very nice. I think these friendships are very close because we have known each other for a long time.",
+            vocabHighlighted: ["childhood friends", "stay in contact", "close relationship"],
+            vietnamese: "Vâng, tôi vẫn có hai hoặc ba người bạn thời thơ ấu. Chúng tôi không gặp nhau thường xuyên, nhưng chúng tôi vẫn giữ liên lạc. Thỉnh thoảng chúng tôi nhắn tin, và khi gặp nhau thì luôn rất vui. Tôi nghĩ những tình bạn này rất gần gũi vì chúng tôi đã biết nhau từ lâu."
+        },
+        {
+            id: 10,
+            question: "How important is family support to you?",
+            answer: "Family support is extremely important to me. My family helps me in many ways, especially when I have problems. They are always there for me, and I am very grateful for their support.",
+            vocabHighlighted: ["family support", "family members"],
+            vietnamese: "Sự hỗ trợ của gia đình cực kỳ quan trọng đối với tôi. Gia đình giúp tôi theo nhiều cách, đặc biệt là khi tôi gặp vấn đề. Họ luôn ở bên cạnh tôi, và tôi rất biết ơn sự hỗ trợ của họ."
+        }
+
         ];
 
         let showVietnamese = false;
